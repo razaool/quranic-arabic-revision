@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page A Day - Quran Revision</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .header {
+            margin-bottom: 40px;
+        }
+        
+        .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #d4af37;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            font-weight: 400;
+        }
+        
+        .progress-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .progress-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #e2e8f0;
+        }
+        
+        .progress-bar {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            height: 12px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            background: linear-gradient(90deg, #d4af37, #f4d03f);
+            height: 100%;
+            border-radius: 10px;
+            transition: width 0.3s ease;
+        }
+        
+        .progress-text {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #d4af37;
+        }
+        
+        .generate-btn {
+            background: linear-gradient(135deg, #d4af37, #f4d03f);
+            color: #1e293b;
+            border: none;
+            border-radius: 16px;
+            padding: 20px 40px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+        }
+        
+        .generate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(212, 175, 55, 0.4);
+        }
+        
+        .generate-btn:active {
+            transform: translateY(0);
+        }
+        
+        .generate-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .message {
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            font-weight: 500;
+            display: none;
+        }
+        
+        .message.success {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            color: #22c55e;
+        }
+        
+        .message.error {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #ef4444;
+        }
+        
+        .loading {
+            display: none;
+            margin: 20px 0;
+        }
+        
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            border-left: 4px solid #d4af37;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .download-link {
+            display: none;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 15px;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #d4af37;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .download-link:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-1px);
+        }
+        
+        @media (max-width: 600px) {
+            .title {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">One Page A Day</h1>
+            <p class="subtitle">Quran Revision Tool</p>
+        </div>
+        
+        <div class="progress-card">
+            <h2 class="progress-title">Your Progress</h2>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: {{ percentage }}%"></div>
+            </div>
+            <div class="progress-text">{{ progress }}/{{ total }} pages ({{ percentage }}%)</div>
+        </div>
+        
+        <button class="generate-btn" onclick="generatePage()">
+            🎲 Generate Random Page
+        </button>
+        
+        <div class="loading">
+            <div class="spinner"></div>
+            <p style="margin-top: 15px; color: #94a3b8;">Generating page...</p>
+        </div>
+        
+        <div class="message" id="message"></div>
+        
+        <a class="download-link" id="downloadLink" href="#" download>
+            📱 Download Image for iPad
+        </a>
+    </div>
+
+    <script>
+        function showMessage(text, type) {
+            const messageEl = document.getElementById('message');
+            messageEl.textContent = text;
+            messageEl.className = `message ${type}`;
+            messageEl.style.display = 'block';
+            
+            setTimeout(() => {
+                messageEl.style.display = 'none';
+            }, 5000);
+        }
+        
+        function updateProgress() {
+            fetch('/progress')
+                .then(response => response.json())
+                .then(data => {
+                    const progressFill = document.querySelector('.progress-fill');
+                    const progressText = document.querySelector('.progress-text');
+                    
+                    progressFill.style.width = data.percentage + '%';
+                    progressText.textContent = `${data.revised}/${data.total} pages (${data.percentage}%)`;
+                });
+        }
+        
+        function generatePage() {
+            const btn = document.querySelector('.generate-btn');
+            const loading = document.querySelector('.loading');
+            const downloadLink = document.getElementById('downloadLink');
+            
+            btn.disabled = true;
+            loading.style.display = 'block';
+            downloadLink.style.display = 'none';
+            
+            fetch('/generate', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                loading.style.display = 'none';
+                btn.disabled = false;
+                
+                if (data.success) {
+                    showMessage(data.message, 'success');
+                    downloadLink.href = data.image_url;
+                    downloadLink.style.display = 'block';
+                    updateProgress();
+                } else {
+                    showMessage(data.message, 'error');
+                }
+            })
+            .catch(error => {
+                loading.style.display = 'none';
+                btn.disabled = false;
+                showMessage('❌ Error generating page', 'error');
+            });
+        }
+    </script>
+</body>
+</html>
