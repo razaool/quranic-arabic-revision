@@ -39,8 +39,12 @@ def install_playwright():
         return False
 
 def generate_page_image(page_num):
-    ar = requests.get(f"http://api.alquran.cloud/v1/page/{page_num}/quran-uthmani").json()["data"]["ayahs"]
-    en = requests.get(f"http://api.alquran.cloud/v1/page/{page_num}/en.sahih").json()["data"]["ayahs"]
+    try:
+        ar = requests.get(f"http://api.alquran.cloud/v1/page/{page_num}/quran-uthmani").json()["data"]["ayahs"]
+        en = requests.get(f"http://api.alquran.cloud/v1/page/{page_num}/en.sahih").json()["data"]["ayahs"]
+    except Exception as e:
+        print(f"Error fetching page data: {e}")
+        return None, None
     
     # Get surah information for the page
     surahs_on_page = set()
@@ -52,7 +56,7 @@ def generate_page_image(page_num):
     # Arabic + translation
     arabic_translation = []
     for a,e in zip(ar,en):
-        arabic_translation.append(f"<div style='margin:10px 0'><div style=\"direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Times New Roman',serif;font-size:24px;line-height:2.2\">{a['text']} <span style='color:#d4af37;font-size:.8em;margin-left:10px'>{a['numberInSurah']}</span></div><div style=\"font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;font-size:16px;line-height:1.6;color:#eee\">{e['text']}</div></div>")
+        arabic_translation.append(f"<div style='margin:25px 0'><div style=\"direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Times New Roman',serif;font-size:56px;line-height:2.8\">{a['text']} <span style='color:#d4af37;font-size:.5em;margin-left:20px'>{a['numberInSurah']}</span></div><div style=\"font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;font-size:32px;line-height:2.0;color:#eee;margin-top:15px\">{e['text']}</div></div>")
     
     # Save Arabic + translation
     translation_html = f"""
@@ -66,7 +70,7 @@ def generate_page_image(page_num):
         </style>
     </head>
     <body>
-        <div style="background:#1e293b;padding:16px;border-radius:10px;width:800px">
+        <div style="background:#1e293b;padding:40px;border-radius:10px;width:2000px;max-width:100%">
             <div style="text-align:center;margin-bottom:20px;padding:15px;background:#0f172a;border-radius:8px;border:2px solid #d4af37">
                 <h1 style="margin:0;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;font-size:24px;color:#d4af37;font-weight:bold">Page {page_num}</h1>
                 <h2 style="margin:5px 0 0 0;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;font-size:18px;color:#e2e8f0;font-weight:normal">{surah_titles}</h2>
@@ -95,6 +99,7 @@ async def main():
     async with async_playwright() as p:
         browser = await p.chromium.launch()
         page = await browser.new_page()
+        await page.set_viewport_size({{"width": 2400, "height": 3000}})
         await page.goto('file://{translation_file}')
         await page.screenshot(path='{translation_output}', full_page=True)
         await browser.close()
@@ -102,6 +107,10 @@ async def main():
 asyncio.run(main())
 """
         ], capture_output=True, text=True)
+        
+        print(f"Playwright result: returncode={result.returncode}")
+        print(f"Playwright stdout: {result.stdout}")
+        print(f"Playwright stderr: {result.stderr}")
         
         if result.returncode == 0:
             # Mark page as revised
@@ -111,9 +120,12 @@ asyncio.run(main())
             os.unlink(translation_file)
             return translation_output, surah_titles
         else:
+            print(f"Playwright failed with return code {result.returncode}")
+            print(f"Error: {result.stderr}")
             os.unlink(translation_file)
             return None, None
     except Exception as e:
+        print(f"Exception in generate_page_image: {e}")
         os.unlink(translation_file)
         return None, None
 
