@@ -7,11 +7,13 @@ import json
 import random
 import requests
 from wbw_integration import WBWManager
+from enhanced_wbw_scraper import EnhancedWBWScraper
 
 app = Flask(__name__)
 
-# Initialize WBW manager
+# Initialize WBW manager and enhanced scraper
 wbw_manager = WBWManager()
+enhanced_scraper = EnhancedWBWScraper()
 
 def load_revised_pages():
     try:
@@ -276,20 +278,33 @@ def scraped_data():
 
 @app.route('/scrape-page/<int:page_num>')
 def scrape_page(page_num):
-    """Scrape word-by-word data for a specific page"""
+    """Scrape word-by-word data for a specific page using enhanced scraper"""
     try:
-        wbw_manager.scrape_page_if_needed(page_num)
-        wbw_manager.scraper.save_data()
+        # Use enhanced scraper for better results
+        page_data = enhanced_scraper.scrape_page_with_playwright(page_num)
+        enhanced_scraper.save_data()
         
-        return f"""
-        <html><body>
-        <h1>✅ Scraping Complete</h1>
-        <p>Page {page_num} has been scraped for word-by-word data.</p>
-        <p><a href="/scraped-data">View All Scraped Data</a></p>
-        <p><a href="/wbw/{page_num}">View Page {page_num} WBW</a></p>
-        <p><a href="/">← Back to Main App</a></p>
-        </body></html>
-        """
+        if page_data:
+            total_words = sum(len(ayah.get('words', [])) for ayah in page_data['ayahs'])
+            return f"""
+            <html><body>
+            <h1>✅ Enhanced Scraping Complete</h1>
+            <p>Page {page_num} has been scraped for word-by-word data using Playwright.</p>
+            <p><strong>Results:</strong> {len(page_data['ayahs'])} ayahs, {total_words} words total</p>
+            <p><a href="/scraped-data">View All Scraped Data</a></p>
+            <p><a href="/wbw/{page_num}">View Page {page_num} WBW</a></p>
+            <p><a href="/">← Back to Main App</a></p>
+            </body></html>
+            """
+        else:
+            return f"""
+            <html><body>
+            <h1>⚠️ Scraping Failed</h1>
+            <p>Could not scrape page {page_num}. The website might be down or the structure changed.</p>
+            <p><a href="/scraped-data">View Existing Data</a></p>
+            <p><a href="/">← Back to Main App</a></p>
+            </body></html>
+            """
     except Exception as e:
         return f"<html><body><h1>Error</h1><p>Error scraping page {page_num}: {e}</p><a href='/'>← Back</a></body></html>"
 
