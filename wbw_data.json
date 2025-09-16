@@ -530,35 +530,1521 @@
     "url": "https://quranwbw.com/1/3",
     "surah": 1,
     "ayah": 3,
-    "words": [],
-    "scraped_at": "2025-09-16 19:55:16"
+    "words": [
+      {
+        "arabic": "ٱلرَّحۡمَٰنِ",
+        "transliteration": "al-rahmani The Most Gracious",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلرَّحِيمِ",
+        "transliteration": "al-rahimi the Most Merciful",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "مَٰلِكِ",
+        "transliteration": "maliki (The) Master",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "يَوۡمِ",
+        "transliteration": "yawmi (of the) Day",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلدِّينِ",
+        "transliteration": "al-dini (of the) Judgment",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "إِيَّاكَ",
+        "transliteration": "iyyaka You Alone",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "نَعۡبُدُ",
+        "transliteration": "na'budu we worship",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَإِيَّاكَ",
+        "transliteration": "wa-iyyaka and You Alone",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "نَسۡتَعِينُ",
+        "transliteration": "nasta'inu we ask for help",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱهۡدِنَا",
+        "transliteration": "ih'dina Guide us",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلصِّرَٰطَ",
+        "transliteration": "al-sirata (to) the path",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمُسۡتَقِيمَ",
+        "transliteration": "al-mus'taqima the straight",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "صِرَٰطَ",
+        "transliteration": "sirata (The) path",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلَّذِينَ",
+        "transliteration": "alladhina (of) those",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "أَنۡعَمۡتَ",
+        "transliteration": "an'amta You have bestowed (Your) Favors",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "alayhim on them",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "غَيۡرِ",
+        "transliteration": "ghayri not (of)",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمَغۡضُوبِ",
+        "transliteration": "al-maghdubi those who earned (Your) wrath",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "alayhim on themselves",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَلَا",
+        "transliteration": "wala and not",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلضَّآلِّينَ",
+        "transliteration": "al-dalina (of) those who go astray",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلرَّحۡمَٰنِ",
+        "transliteration": "al-rahmani The Most Gracious",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلرَّحِيمِ",
+        "transliteration": "al-rahimi the Most Merciful",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "مَٰلِكِ",
+        "transliteration": "maliki (The) Master",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "يَوۡمِ",
+        "transliteration": "yawmi (of the) Day",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلدِّينِ",
+        "transliteration": "al-dini (of the) Judgment",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "إِيَّاكَ",
+        "transliteration": "iyyaka You Alone",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "نَعۡبُدُ",
+        "transliteration": "na'budu we worship",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَإِيَّاكَ",
+        "transliteration": "wa-iyyaka and You Alone",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "نَسۡتَعِينُ",
+        "transliteration": "nasta'inu we ask for help",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱهۡدِنَا",
+        "transliteration": "ih'dina Guide us",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلصِّرَٰطَ",
+        "transliteration": "al-sirata (to) the path",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمُسۡتَقِيمَ",
+        "transliteration": "al-mus'taqima the straight",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "صِرَٰطَ",
+        "transliteration": "sirata (The) path",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلَّذِينَ",
+        "transliteration": "alladhina (of) those",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "أَنۡعَمۡتَ",
+        "transliteration": "an'amta You have bestowed (Your) Favors",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "alayhim on them",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "غَيۡرِ",
+        "transliteration": "ghayri not (of)",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمَغۡضُوبِ",
+        "transliteration": "al-maghdubi those who earned (Your) wrath",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "alayhim on themselves",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَلَا",
+        "transliteration": "wala and not",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلضَّآلِّينَ",
+        "transliteration": "al-dalina (of) those who go astray",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلرَّحۡمَٰنِ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلرَّحِيمِ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "٣",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "مَٰلِكِ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "يَوۡمِ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلدِّينِ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "٤",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "إِيَّاكَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "نَعۡبُدُ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَإِيَّاكَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "نَسۡتَعِينُ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "٥",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱهۡدِنَا",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلصِّرَٰطَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمُسۡتَقِيمَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "٦",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "صِرَٰطَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلَّذِينَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "أَنۡعَمۡتَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "غَيۡرِ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمَغۡضُوبِ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَلَا",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلضَّآلِّينَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "٧",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      }
+    ],
+    "scraped_at": "2025-09-16 20:06:37",
+    "method": "playwright"
   },
   "1:4": {
     "url": "https://quranwbw.com/1/4",
     "surah": 1,
     "ayah": 4,
-    "words": [],
-    "scraped_at": "2025-09-16 19:55:17"
+    "words": [
+      {
+        "arabic": "مَٰلِكِ",
+        "transliteration": "maliki (The) Master",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "يَوۡمِ",
+        "transliteration": "yawmi (of the) Day",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلدِّينِ",
+        "transliteration": "al-dini (of the) Judgment",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "إِيَّاكَ",
+        "transliteration": "iyyaka You Alone",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "نَعۡبُدُ",
+        "transliteration": "na'budu we worship",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَإِيَّاكَ",
+        "transliteration": "wa-iyyaka and You Alone",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "نَسۡتَعِينُ",
+        "transliteration": "nasta'inu we ask for help",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱهۡدِنَا",
+        "transliteration": "ih'dina Guide us",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلصِّرَٰطَ",
+        "transliteration": "al-sirata (to) the path",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمُسۡتَقِيمَ",
+        "transliteration": "al-mus'taqima the straight",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "صِرَٰطَ",
+        "transliteration": "sirata (The) path",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلَّذِينَ",
+        "transliteration": "alladhina (of) those",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "أَنۡعَمۡتَ",
+        "transliteration": "an'amta You have bestowed (Your) Favors",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "alayhim on them",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "غَيۡرِ",
+        "transliteration": "ghayri not (of)",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمَغۡضُوبِ",
+        "transliteration": "al-maghdubi those who earned (Your) wrath",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "alayhim on themselves",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَلَا",
+        "transliteration": "wala and not",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلضَّآلِّينَ",
+        "transliteration": "al-dalina (of) those who go astray",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "مَٰلِكِ",
+        "transliteration": "maliki (The) Master",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "يَوۡمِ",
+        "transliteration": "yawmi (of the) Day",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلدِّينِ",
+        "transliteration": "al-dini (of the) Judgment",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "إِيَّاكَ",
+        "transliteration": "iyyaka You Alone",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "نَعۡبُدُ",
+        "transliteration": "na'budu we worship",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَإِيَّاكَ",
+        "transliteration": "wa-iyyaka and You Alone",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "نَسۡتَعِينُ",
+        "transliteration": "nasta'inu we ask for help",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱهۡدِنَا",
+        "transliteration": "ih'dina Guide us",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلصِّرَٰطَ",
+        "transliteration": "al-sirata (to) the path",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمُسۡتَقِيمَ",
+        "transliteration": "al-mus'taqima the straight",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "صِرَٰطَ",
+        "transliteration": "sirata (The) path",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلَّذِينَ",
+        "transliteration": "alladhina (of) those",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "أَنۡعَمۡتَ",
+        "transliteration": "an'amta You have bestowed (Your) Favors",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "alayhim on them",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "غَيۡرِ",
+        "transliteration": "ghayri not (of)",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمَغۡضُوبِ",
+        "transliteration": "al-maghdubi those who earned (Your) wrath",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "alayhim on themselves",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَلَا",
+        "transliteration": "wala and not",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلضَّآلِّينَ",
+        "transliteration": "al-dalina (of) those who go astray",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "مَٰلِكِ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "يَوۡمِ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلدِّينِ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "٤",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "إِيَّاكَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "نَعۡبُدُ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَإِيَّاكَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "نَسۡتَعِينُ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "٥",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱهۡدِنَا",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلصِّرَٰطَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمُسۡتَقِيمَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "٦",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "صِرَٰطَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلَّذِينَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "أَنۡعَمۡتَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "غَيۡرِ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمَغۡضُوبِ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَلَا",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلضَّآلِّينَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "٧",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      }
+    ],
+    "scraped_at": "2025-09-16 20:05:56",
+    "method": "playwright"
   },
   "1:5": {
     "url": "https://quranwbw.com/1/5",
     "surah": 1,
     "ayah": 5,
-    "words": [],
-    "scraped_at": "2025-09-16 19:55:18"
+    "words": [
+      {
+        "arabic": "إِيَّاكَ",
+        "transliteration": "iyyaka You Alone",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "نَعۡبُدُ",
+        "transliteration": "na'budu we worship",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَإِيَّاكَ",
+        "transliteration": "wa-iyyaka and You Alone",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "نَسۡتَعِينُ",
+        "transliteration": "nasta'inu we ask for help",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱهۡدِنَا",
+        "transliteration": "ih'dina Guide us",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلصِّرَٰطَ",
+        "transliteration": "al-sirata (to) the path",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمُسۡتَقِيمَ",
+        "transliteration": "al-mus'taqima the straight",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "صِرَٰطَ",
+        "transliteration": "sirata (The) path",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلَّذِينَ",
+        "transliteration": "alladhina (of) those",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "أَنۡعَمۡتَ",
+        "transliteration": "an'amta You have bestowed (Your) Favors",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "alayhim on them",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "غَيۡرِ",
+        "transliteration": "ghayri not (of)",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمَغۡضُوبِ",
+        "transliteration": "al-maghdubi those who earned (Your) wrath",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "alayhim on themselves",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَلَا",
+        "transliteration": "wala and not",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلضَّآلِّينَ",
+        "transliteration": "al-dalina (of) those who go astray",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "إِيَّاكَ",
+        "transliteration": "iyyaka You Alone",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "نَعۡبُدُ",
+        "transliteration": "na'budu we worship",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَإِيَّاكَ",
+        "transliteration": "wa-iyyaka and You Alone",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "نَسۡتَعِينُ",
+        "transliteration": "nasta'inu we ask for help",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱهۡدِنَا",
+        "transliteration": "ih'dina Guide us",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلصِّرَٰطَ",
+        "transliteration": "al-sirata (to) the path",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمُسۡتَقِيمَ",
+        "transliteration": "al-mus'taqima the straight",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "صِرَٰطَ",
+        "transliteration": "sirata (The) path",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلَّذِينَ",
+        "transliteration": "alladhina (of) those",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "أَنۡعَمۡتَ",
+        "transliteration": "an'amta You have bestowed (Your) Favors",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "alayhim on them",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "غَيۡرِ",
+        "transliteration": "ghayri not (of)",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمَغۡضُوبِ",
+        "transliteration": "al-maghdubi those who earned (Your) wrath",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "alayhim on themselves",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَلَا",
+        "transliteration": "wala and not",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلضَّآلِّينَ",
+        "transliteration": "al-dalina (of) those who go astray",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "إِيَّاكَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "نَعۡبُدُ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَإِيَّاكَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "نَسۡتَعِينُ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "٥",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱهۡدِنَا",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلصِّرَٰطَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمُسۡتَقِيمَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "٦",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "صِرَٰطَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلَّذِينَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "أَنۡعَمۡتَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "غَيۡرِ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمَغۡضُوبِ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَلَا",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلضَّآلِّينَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "٧",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      }
+    ],
+    "scraped_at": "2025-09-16 20:06:03",
+    "method": "playwright"
   },
   "1:6": {
     "url": "https://quranwbw.com/1/6",
     "surah": 1,
     "ayah": 6,
-    "words": [],
-    "scraped_at": "2025-09-16 19:55:19"
+    "words": [
+      {
+        "arabic": "ٱهۡدِنَا",
+        "transliteration": "ih'dina Guide us",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلصِّرَٰطَ",
+        "transliteration": "al-sirata (to) the path",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمُسۡتَقِيمَ",
+        "transliteration": "al-mus'taqima the straight",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "صِرَٰطَ",
+        "transliteration": "sirata (The) path",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلَّذِينَ",
+        "transliteration": "alladhina (of) those",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "أَنۡعَمۡتَ",
+        "transliteration": "an'amta You have bestowed (Your) Favors",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "alayhim on them",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "غَيۡرِ",
+        "transliteration": "ghayri not (of)",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمَغۡضُوبِ",
+        "transliteration": "al-maghdubi those who earned (Your) wrath",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "alayhim on themselves",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَلَا",
+        "transliteration": "wala and not",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلضَّآلِّينَ",
+        "transliteration": "al-dalina (of) those who go astray",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱهۡدِنَا",
+        "transliteration": "ih'dina Guide us",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلصِّرَٰطَ",
+        "transliteration": "al-sirata (to) the path",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمُسۡتَقِيمَ",
+        "transliteration": "al-mus'taqima the straight",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "صِرَٰطَ",
+        "transliteration": "sirata (The) path",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلَّذِينَ",
+        "transliteration": "alladhina (of) those",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "أَنۡعَمۡتَ",
+        "transliteration": "an'amta You have bestowed (Your) Favors",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "alayhim on them",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "غَيۡرِ",
+        "transliteration": "ghayri not (of)",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمَغۡضُوبِ",
+        "transliteration": "al-maghdubi those who earned (Your) wrath",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "alayhim on themselves",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَلَا",
+        "transliteration": "wala and not",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلضَّآلِّينَ",
+        "transliteration": "al-dalina (of) those who go astray",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱهۡدِنَا",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلصِّرَٰطَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمُسۡتَقِيمَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "٦",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "صِرَٰطَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلَّذِينَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "أَنۡعَمۡتَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "غَيۡرِ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمَغۡضُوبِ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَلَا",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلضَّآلِّينَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "٧",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      }
+    ],
+    "scraped_at": "2025-09-16 20:06:09",
+    "method": "playwright"
   },
   "1:7": {
     "url": "https://quranwbw.com/1/7",
     "surah": 1,
     "ayah": 7,
-    "words": [],
-    "scraped_at": "2025-09-16 19:55:20"
+    "words": [
+      {
+        "arabic": "صِرَٰطَ",
+        "transliteration": "sirata (The) path",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلَّذِينَ",
+        "transliteration": "alladhina (of) those",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "أَنۡعَمۡتَ",
+        "transliteration": "an'amta You have bestowed (Your) Favors",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "alayhim on them",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "غَيۡرِ",
+        "transliteration": "ghayri not (of)",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمَغۡضُوبِ",
+        "transliteration": "al-maghdubi those who earned (Your) wrath",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "alayhim on themselves",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَلَا",
+        "transliteration": "wala and not",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلضَّآلِّينَ",
+        "transliteration": "al-dalina (of) those who go astray",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "صِرَٰطَ",
+        "transliteration": "sirata (The) path",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلَّذِينَ",
+        "transliteration": "alladhina (of) those",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "أَنۡعَمۡتَ",
+        "transliteration": "an'amta You have bestowed (Your) Favors",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "alayhim on them",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "غَيۡرِ",
+        "transliteration": "ghayri not (of)",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمَغۡضُوبِ",
+        "transliteration": "al-maghdubi those who earned (Your) wrath",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "alayhim on themselves",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَلَا",
+        "transliteration": "wala and not",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلضَّآلِّينَ",
+        "transliteration": "al-dalina (of) those who go astray",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "صِرَٰطَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلَّذِينَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "أَنۡعَمۡتَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "غَيۡرِ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلۡمَغۡضُوبِ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "عَلَيۡهِمۡ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "وَلَا",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "ٱلضَّآلِّينَ",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      },
+      {
+        "arabic": "٧",
+        "transliteration": "",
+        "translation": "",
+        "grammar": ""
+      }
+    ],
+    "scraped_at": "2025-09-16 20:06:16",
+    "method": "playwright"
   }
 }
