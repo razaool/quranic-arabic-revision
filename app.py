@@ -154,11 +154,16 @@ def generate():
     image_file, surah_titles = generate_page_image(page_num)
     
     if image_file:
+        # Get the first ayah for word-by-word analysis link
+        ar = requests.get(f"http://api.alquran.cloud/v1/page/{page_num}/quran-uthmani").json()["data"]["ayahs"]
+        wbw_link = f"https://quranwbw.com/{ar[0]['surah']['number']}/{ar[0]['numberInSurah']}"
+        
         return jsonify({
             'success': True,
             'page_num': page_num,
             'surah_titles': surah_titles,
             'image_url': f'/download/{image_file}',
+            'wbw_link': wbw_link,
             'message': f'✅ Page {page_num} generated successfully!'
         })
     else:

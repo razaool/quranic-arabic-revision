@@ -211,6 +211,10 @@
         <a class="download-link" id="downloadLink" href="#" download>
             📱 Download Image for iPad
         </a>
+        
+        <a class="download-link" id="wbwLink" href="#" target="_blank" style="display: none;">
+            📖 Word-by-Word Analysis
+        </a>
     </div>
 
     <script>
@@ -241,10 +245,12 @@
             const btn = document.querySelector('.generate-btn');
             const loading = document.querySelector('.loading');
             const downloadLink = document.getElementById('downloadLink');
+            const wbwLink = document.getElementById('wbwLink');
             
             btn.disabled = true;
             loading.style.display = 'block';
             downloadLink.style.display = 'none';
+            wbwLink.style.display = 'none';
             
             fetch('/generate', {
                 method: 'POST',
@@ -261,6 +267,8 @@
                     showMessage(data.message, 'success');
                     downloadLink.href = data.image_url;
                     downloadLink.style.display = 'block';
+                    wbwLink.href = data.wbw_link;
+                    wbwLink.style.display = 'block';
                     updateProgress();
                 } else {
                     showMessage(data.message, 'error');
