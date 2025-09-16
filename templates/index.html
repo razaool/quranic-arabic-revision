@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Page A Day - Quran Revision</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -13,8 +12,8 @@
         }
         
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
             color: white;
             min-height: 100vh;
             display: flex;
@@ -36,19 +35,19 @@
         .title {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #d4af37;
+            color: white;
             margin-bottom: 10px;
         }
         
         .subtitle {
             font-size: 1.1rem;
-            color: #94a3b8;
+            color: #cccccc;
             font-weight: 400;
         }
         
         .progress-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 16px;
             padding: 30px;
             margin-bottom: 30px;
@@ -59,7 +58,7 @@
             font-size: 1.2rem;
             font-weight: 600;
             margin-bottom: 20px;
-            color: #e2e8f0;
+            color: white;
         }
         
         .progress-bar {
@@ -71,7 +70,7 @@
         }
         
         .progress-fill {
-            background: linear-gradient(90deg, #d4af37, #f4d03f);
+            background: linear-gradient(90deg, #ffffff, #cccccc);
             height: 100%;
             border-radius: 10px;
             transition: width 0.3s ease;
@@ -80,12 +79,12 @@
         .progress-text {
             font-size: 1.1rem;
             font-weight: 500;
-            color: #d4af37;
+            color: white;
         }
         
         .generate-btn {
-            background: linear-gradient(135deg, #d4af37, #f4d03f);
-            color: #1e293b;
+            background: linear-gradient(135deg, #ffffff, #cccccc);
+            color: #000000;
             border: none;
             border-radius: 16px;
             padding: 20px 40px;
@@ -95,12 +94,12 @@
             transition: all 0.3s ease;
             width: 100%;
             margin-bottom: 20px;
-            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
         }
         
         .generate-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 12px 35px rgba(212, 175, 55, 0.4);
+            box-shadow: 0 12px 35px rgba(255, 255, 255, 0.4);
         }
         
         .generate-btn:active {
@@ -142,7 +141,7 @@
             width: 40px;
             height: 40px;
             border: 4px solid rgba(255, 255, 255, 0.1);
-            border-left: 4px solid #d4af37;
+            border-left: 4px solid white;
             border-radius: 50%;
             animation: spin 1s linear infinite;
             margin: 0 auto;
@@ -161,7 +160,7 @@
             padding: 15px;
             margin-top: 20px;
             text-decoration: none;
-            color: #d4af37;
+            color: white;
             font-weight: 500;
             transition: all 0.3s ease;
         }
