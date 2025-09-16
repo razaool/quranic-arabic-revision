@@ -53,13 +53,13 @@ def generate_page_image(page_num):
     
     surah_titles = " • ".join(sorted(surahs_on_page))
     
-    # Arabic + translation
-    arabic_translation = []
-    for a,e in zip(ar,en):
-        arabic_translation.append(f"<div style='margin:25px 0'><div style=\"direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Times New Roman',serif;font-size:56px;line-height:2.8\">{a['text']} <span style='color:#d4af37;font-size:.5em;margin-left:20px'>{a['numberInSurah']}</span></div><div style=\"font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;font-size:32px;line-height:2.0;color:#eee;margin-top:15px\">{e['text']}</div></div>")
+    # Arabic only (no translation)
+    arabic_only = []
+    for a in ar:
+        arabic_only.append(f"<div style='margin:30px 0'><div style=\"direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Times New Roman',serif;font-size:72px;line-height:3.2\">{a['text']} <span style='color:#d4af37;font-size:.4em;margin-left:25px'>{a['numberInSurah']}</span></div></div>")
     
-    # Save Arabic + translation
-    translation_html = f"""
+    # Save Arabic only
+    arabic_html = f"""
     <!DOCTYPE html>
     <html>
     <head>
@@ -75,21 +75,21 @@ def generate_page_image(page_num):
                 <h1 style="margin:0;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;font-size:24px;color:#d4af37;font-weight:bold">Page {page_num}</h1>
                 <h2 style="margin:5px 0 0 0;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;font-size:18px;color:#e2e8f0;font-weight:normal">{surah_titles}</h2>
             </div>
-            {''.join(arabic_translation)}
+            {''.join(arabic_only)}
         </div>
     </body>
     </html>
     """
     
     # Create temp file
-    with tempfile.NamedTemporaryFile(mode='w', suffix='_translation.html', delete=False, encoding='utf-8') as f:
-        f.write(translation_html)
-        translation_file = f.name
+    with tempfile.NamedTemporaryFile(mode='w', suffix='_arabic.html', delete=False, encoding='utf-8') as f:
+        f.write(arabic_html)
+        arabic_file = f.name
     
-    translation_output = f"quran_page_{page_num}_arabic_translation.png"
+    arabic_output = f"quran_page_{page_num}_arabic.png"
     
     try:
-        # Save Arabic + translation
+        # Save Arabic only
         result = subprocess.run([
             sys.executable, "-c", f"""
 import asyncio
@@ -100,8 +100,8 @@ async def main():
         browser = await p.chromium.launch()
         page = await browser.new_page()
         await page.set_viewport_size({{"width": 2400, "height": 3000}})
-        await page.goto('file://{translation_file}')
-        await page.screenshot(path='{translation_output}', full_page=True)
+        await page.goto('file://{arabic_file}')
+        await page.screenshot(path='{arabic_output}', full_page=True)
         await browser.close()
 
 asyncio.run(main())
@@ -117,16 +117,16 @@ asyncio.run(main())
             revised_pages = load_revised_pages()
             revised_pages.add(page_num)
             save_revised_pages(revised_pages)
-            os.unlink(translation_file)
-            return translation_output, surah_titles
+            os.unlink(arabic_file)
+            return arabic_output, surah_titles
         else:
             print(f"Playwright failed with return code {result.returncode}")
             print(f"Error: {result.stderr}")
-            os.unlink(translation_file)
+            os.unlink(arabic_file)
             return None, None
     except Exception as e:
         print(f"Exception in generate_page_image: {e}")
-        os.unlink(translation_file)
+        os.unlink(arabic_file)
         return None, None
 
 @app.route('/')
