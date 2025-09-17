@@ -243,5 +243,20 @@ def progress():
         'percentage': round((len(revised_pages) / 604) * 100, 1)
     })
 
+@app.route('/completed')
+def completed_pages():
+    revised_pages = load_revised_pages()
+    total = 604
+    percentage = round((len(revised_pages) / total) * 100, 1)
+    
+    # Sort pages for better display
+    sorted_pages = sorted(list(revised_pages))
+    
+    return render_template('completed.html', 
+                         revised_pages=sorted_pages,
+                         progress=len(revised_pages),
+                         total=total,
+                         percentage=percentage)
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5001)
